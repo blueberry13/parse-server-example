@@ -66,6 +66,8 @@ app.get('/test', function(req, res) {
   res.sendFile(path.join(__dirname, '/public/test.html'));
 });
 
+app.use('/parse', api);
+
 //parse-dashboard
 app.use('/dashboard', dashboard);
 

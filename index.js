@@ -40,8 +40,8 @@ var dashboard = new ParseDashboard({
   ],
   users: [
     {
-      user: process.env.ADM_USER || '',
-      pass: process.env.ADM_PASS || ''
+      user: process.env.ADM_USER || 'blueberry',
+      pass: process.env.ADM_PASS || 'blueberry'
     }
   ]
 }, true);

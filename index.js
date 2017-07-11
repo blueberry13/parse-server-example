@@ -7,14 +7,14 @@ var path = require('path');
 //parse-dashboard
 var ParseDashboard = require('parse-dashboard');
 
-var databaseUri = 'mongodb://blueberry:sooyeon13@ds119020.mlab.com:19020/daily_saying';
+var databaseUri = 'mongodb://user1:asdf@ds119020.mlab.com:19020/daily_saying';
 
 if (!databaseUri) {
   console.log('DATABASE_URI not specified, falling back to localhost.');
 }
 
 var api = new ParseServer({
-  databaseURI: databaseUri || 'mongodb://localhost:27017/dev',
+  databaseURI: databaseUri ||'mongodb://user1:asdf@ds119020.mlab.com:19020/daily_saying',
   cloud: process.env.CLOUD_CODE_MAIN || __dirname + '/cloud/main.js',
   appId: process.env.APP_ID || 'a814j91hsofa83hi01',
   masterKey: process.env.MASTER_KEY || '18hosf0u3joadosdfio20ajohf02h34', //Add your master key here. Keep it secret!
